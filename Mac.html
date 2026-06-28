@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Store UI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        body {
+            background: #f2f2f2;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 15px;
+            background: white;
+            position: sticky;
+            top: 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* BANNER */
+        .banner {
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* TOP BOX */
+        .card {
+            background-color: white;
+            height: 300px;
+            display: flex;
+            gap: 15px;
+            padding: 20px;
+            overflow-x: auto;
+        }
+
+        .box {
+            width: 400px;
+            height: 300px;
+            min-width: 120px;
+            height: 120px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box:hover {
+            transform: translateY(-10px);
+            transition: -2em;
+        }
+
+        /* TITLE */
+        .section-title {
+            font-size: 50px;
+            padding: 50px;
+            margin: 20px 0;
+        }
+
+        /* SLIDER */
+        .slider-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .slider {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+
+        .close {
+            width: 400px;
+            min-width: 300px;
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .close:hover {
+            transform: translateY(-10px);
+            transition: -2em;
+        }
+
+        .close img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            background: #0071e3;
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        /* BUTTONS */
+        .btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: none;
+            background: white;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .main {
+            height: 600px;
+            margin-top: 20px;
+            padding: 40px;
+            gap: 40px;
+            display: flex;
+        }
+
+        .form {
+            height: 500px;
+            width: 900px;
+            border-radius: 20px;
+            width: 100%;
+            height: auto;
+            background-color: white
+        }
+
+        .form:hover {
+            transform: translateY(-10px);
+            transition: -2em;
+            background-color: rgb(172, 156, 156);
+        }
+
+        .product {
+            height: 1200px;
+            background-color: white;
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            place-items: center;
+            place-content: center;
+            align-content: center;
+        }
+
+        .hero h3 {
+            font-size: 30px;
+        }
+
+        .hero p {
+            margin-top: 20px;
+            font-size: 30px;
+        }
+        .hero img {
+            align-items: center;
+            align-content: center;
+            place-items: center;
+            place-content: center;
+            justify-content: center;
+            width: 900px;
+            max-width: 900px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 20px;
+            display: block;
+        }
+
+        .hero {
+            width: 700px;
+            height: 600px;
+            padding: 20px;
+            background-color: whitesmoke;
+        }
+
+        .txt {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .hero:hover {
+            transform: translateY(-7px);
+            transition: -7em;
+        }
+
+        .input {
+            padding: 50px;
+            margin-top: 20px;
+            width: 50%;
+            height: 700px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- NAVBAR -->
+        <div class="navbar">
+            <a href="./Store.html">Store</a>
+            <a href="../Phone1/Mac.html">Mac</a>
+            <a href="#">iPad</a>
+            <a href="#">iPhone</a>
+            <a href="./applewatch.html">Watch</a>
+            <a href="#">Vision</a>
+            <a href="./Airport.html">AirPods</a>
+            <a href="#">TV & Home</a>
+            <a href="#">Entertainment</a>
+            <a href="#">Accessories</a>
+            <a href="#">Support</a>
+            <i class="bi bi-search"></i>
+        </div>
+
+        <h5 class="banner">Buy Mac with education savings.*Shop</h5>
+
+        <!-- TOP ICON MENU -->
+        <div class="card">
+            <h1 style="padding: 50px; font-size: 80px;">Mac</h1>
+        </div>
+
+        <div class="card">
+            <div class="box">
+                <img src="https://www.apple.com/assets-www/en_WW/mac/04_chapternav/small/nav_mbn_fcdfdf35f_2x.png"
+                    alt="">
+            </div>
+            <div class="box"><img
+                    src="https://www.apple.com/assets-www/en_WW/mac/04_chapternav/small/nav_mba_8e00b3bdd_2x.png"></div>
+            <div class="box"><img
+                    src="https://www.apple.com/assets-www/en_WW/mac/04_chapternav/small/nav_mbp_0b36bc863_2x.png"></div>
+            <div class="box"><img
+                    src="https://www.apple.com/assets-www/en_WW/mac/04_chapternav/small/nav_imac_24_fbf85926c_2x.png">
+            </div>
+            <div class="box"><img
+                    src="https://www.apple.com/assets-www/en_WW/mac/04_chapternav/small/nav_mac_mini_f628f615d_2x.png">
+            </div>
+            <div class="box">
+                <img src="https://www.apple.com/assets-www/en_WW/mac/04_chapternav/small/nav_mac_studio_fc7bb80c1_2x.png"
+                    alt="">
+            </div>
+            <div class="box">
+                <img src="https://www.apple.com/assets-www/en_WW/mac/04_chapternav/small/nav_compare_5c5c25766_2x.png"
+                    alt="">
+            </div>
+            <div class="box">
+                <img src="https://www.apple.com/assets-www/en_WW/mac/04_chapternav/small/nav_displays_e08c5b904_2x.png"
+                    alt="">
+            </div>
+            <div class="box">
+                <img src="https://www.apple.com/assets-www/en_WW/mac/04_chapternav/small/nav_accessories_c3e74ad3c_2x.png"
+                    alt="">
+            </div>
+            <div class="box">
+                <img src="https://www.apple.com/assets-www/en_WW/mac/04_chapternav/small/nav_shop_mac_180ba8818_2x.png"
+                    alt="">
+            </div>
+            <div class="box">
+                <img src="https://www.apple.com/assets-www/en_WW/mac/07_chapternav/small/nav_macos_eba0c550e_2x.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <h1 class="section-title">Explore the lineup</h1>
+    <!-- SLIDER 1 -->
+    <div class="slider-container">
+        <button class="btn prev">&#10094;</button>
+        <div class="slider" id="slider1">
+            <div class="close">
+                <img src="https://www.apple.com/assets-www/en_WW/mac/04_product_tile/large/mbn_37b3fdaaf.jpg">
+                <h2>MacBook Neo</h2>
+                <p>Powerful and modern Mac</p>
+                <button class="button">Learn more</button>
+            </div>
+            <div class="close">
+                <img src="https://www.apple.com/assets-www/en_WW/mac/04_product_tile/large/mba_13_15_e733a3435.jpg">
+                <h2>MacBook Air</h2>
+                <p>Thin and light</p>
+                <button class="button">Learn more</button>
+            </div>
+            <div class="close">
+                <img src="https://www.apple.com/assets-www/en_WW/mac/04_product_tile/large/mbp_14_16_fa5e3a2b2.jpg">
+                <h2>MacBook Pro</h2>
+                <p>For professionals</p>
+                <button class="button">Learn more</button>
+            </div>
+            <div class="close">
+                <img src="https://www.apple.com/assets-www/en_WW/mac/04_product_tile/large/imac_24_664024e20_2x.jpg">
+                <h2>MacBook Neo</h2>
+                <p>Powerful and modern Mac</p>
+                <button class="button">Learn more</button>
+            </div>
+            <div class="close">
+                <img src="https://www.apple.com/assets-www/en_WW/mac/04_product_tile/large/mac_mini_3a6756873_2x.jpg">
+                <h2>MacBook Air</h2>
+                <p>Thin and light</p>
+                <button class="button">Learn more</button>
+            </div>
+
+            <div class="close">
+                <img src="https://www.apple.com/assets-www/en_WW/mac/04_product_tile/large/mac_studio_e072659cc_2x.jpg">
+                <h2>MacBook Pro</h2>
+                <p>For professionals</p>
+                <button class="button">Learn more</button>
+            </div>
+            <div class="close">
+                <img
+                    src="https://www.apple.com/assets-www/en_WW/mac/04_product_tile/large/studio_display_7963c35c4_2x.jpg">
+                <h2>MacBook Air</h2>
+                <p>Thin and light</p>
+                <button class="button">Learn more</button>
+            </div>
+
+            <div class="close">
+                <img
+                    src="https://www.apple.com/assets-www/en_WW/mac/04_product_tile/large/studio_display_xdr_a684a5970_2x.jpg">
+                <h2>MacBook Pro</h2>
+                <p>For professionals</p>
+                <button class="button">Learn more</button>
+            </div>
+        </div>
+        <button class="btn next">&#10095;</button>
+    </div>
+    <div class="section-title">
+        <h1 style="font-size: 40px;">Why Apple is the best<br>
+            place to buy Mac.</h1>
+    </div>
+    <div class="slider-container">
+        <button class="btn prev">&#10094;</button>
+        <div class="slider" id="slider1">
+            <div class="main">
+                <div class="close">
+                    <h3 style="padding: 20px;">Way to Buy</h3>
+                    <h2 style="padding: 20px;">Pay over time,<br>interest-free</h2>
+                    <p style="padding: 20px;">When you choose to check out at Apple<br>with Apple Card Monthly
+                        installment.</p>
+                    <img style="width: 100%; margin-top: 20px; height: 230px;"
+                        src="https://i.pinimg.com/736x/3f/4c/61/3f4c618cacd58ac56f70c7783e398bf6.jpg" alt="">
+                </div>
+                <div class="close">
+                    <h3 style="padding: 20px;">Education</h3>
+                    <h2 style="padding: 20px;">Save on mac with<br>education pricing</h2>
+                    <p style="padding: 20px;">college student and education can <br>save through to Apple Store</p>
+                    <img style="width: 100%; height: 270px; object-fit: cover;"
+                        src="https://i.pinimg.com/1200x/6e/74/e4/6e74e4d50a650bf705fc20bf780bf7f7.jpg" alt="">
+                </div>
+                <div class="close">
+                    <h3 style="padding: 20px;">Posonal Setup</h3>
+                    <h2 style="padding: 20px;">Meet your new Mac with<br>Posonal Setup</h2>
+                    <p style="padding: 20px;">Get one-on-one help with data transfer,<br>the latest features,and more.
+                    </p>
+                    <img style="width: 100%; height: 250px;"
+                        src="https://i.pinimg.com/1200x/33/ec/f5/33ecf54a16ba99af3262b0e9bb02ee95.jpg" alt="">
+                </div>
+                <div class="close">
+                    <h3 style="padding: 20px;">Customize Your Mac</h3>
+                    <h2 style="padding: 20px;">Customize Your Mac</h2>
+                    <p style="padding: 20px;">Choose your chip,memory,storage,<br>even color.</p>
+                    <img style="width: 100%;"
+                        src="https://i.pinimg.com/736x/fc/07/4d/fc074dcb3fefd605aececb652ec45b4d.jpg" alt="">
+                </div>
+                <div class="close">
+                    <h3 style="padding: 20px;">Delivery & Pickup</h3>
+                    <h2 style="padding: 20px;">Get flexible delivery and<br>easy pickup</h2>
+                    <p style="padding: 20px;">Choose from two-hour delivery from an<br>Apple Store,free delivery,or
+                        easy<br>Pickup option</p>
+                    <img style="width: 100%;"
+                        src="https://i.pinimg.com/736x/d1/b9/2e/d1b92e332bd91daf7a13d8ae58bba0d1.jpg" alt="">
+                </div>
+                <div class="close">
+                    <h3 style="padding: 20px;">Guided Shopping</h3>
+                    <h2 style="padding: 20px;">Shop live with a<br>Specialist</h2>
+                    <p style="padding: 20px;">Let us help you find what you need and<br>answer all of your question,one
+                        on<br>one, at an Apple Store or online</p>
+                    <img style="width: 100%; height: 230px; object-fit: cover;"
+                        src="https://i.pinimg.com/1200x/2c/e3/98/2ce398b6e5a2999258f2327bbbb72a73.jpg" alt="">
+                </div>
+                <div class="close">
+                    <h3 style="padding: 20px;">Apple Store App</h3>
+                    <h2 style="padding: 20px;">Explore a shopping<br>experience designed<br>around you.</h2>
+                    <p style="padding: 20px;">Use the Apple Store app to get a more personal way to shop</p>
+                    <img style="width: 100%;" height="230px"
+                        src="https://i.pinimg.com/736x/f6/04/97/f604970a80471773571a3a9a50f1b18b.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-title">
+        <h1 style="font-size: 50px;">Get to know Mac.</h1>
+    </div>
+    <div class="product">
+        <div class="hero">
+            <div class="txt">
+                <h1 style="font-size: 40px;">Mac Accessories</h1>
+                <p style="margin-top: 20px;">Explore Kyboard</p>
+                <p style="color: blue; margin-top: 55px;">Shop Mac Accessories
+                </p>
+                <img style="width: 100%; height: 500px; margin-top: 20px; border-radius: 20px;"
+                    src="https://i.pinimg.com/736x/d3/21/1c/d3211cf492a1cbb4bd3feef854feea00.jpg" alt="">
+            </div>
+        </div>
+        <div class="hero">
+            <div class="txt">
+                <h1 style="font-size: 40px;">Studio Display</h1>
+                <p style="margin-top: 20px;">The 27-inch 5k Retina display pairs beacutifully<br>with Mac.</p>
+                <p style="color: blue; margin-top: 20px;">Learn more >
+                </p>
+                <img style="width: 100%; height: 500px; margin-top: 20px; border-radius: 20px; object-fit: cover;"
+                    src="https://i.pinimg.com/736x/cb/2d/1f/cb2d1f8834003b267eeaaa8a6a1f14c8.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="section-title">
+        <h1 style="margin-top: 60px; font-size: 50px;">Unlock the world of Apple </h1>
+    </div>
+    <div class="product">
+        <div class="hero">
+            <h3>Mac and iPhone</h3>
+            <p>Answer calls All messages from your<br>iPhone directly on your Mac. See and <br>control what's on your
+                iPhone from<br>your Mac with iPhone Mirroring and<br>Live Activities. Use Universal<br>Clipboard to copy
+                images, video, or<br>text from your iPhone, then paste into<br>another app on your nearby Mac.
+                And<br>thanks to iCloud, you can access your<br>files from either your iPhone or your<br>Mac. And so
+                m⁠u⁠c⁠h⁠ ⁠m⁠o⁠r⁠e⁠.</p>
+        </div>
+        <div class="hero">
+            <img style="width: 200px; border-radius: 20px;"
+                src="https://www.apple.com/assets-www/en_WW/mac/03_image_accordion/large/mac_ipad_e3dad78c7_2x.jpg"
+                alt="">
+        </div>
+    </div>
+</body>
+
+</html>

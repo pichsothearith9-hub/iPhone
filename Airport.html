@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            gap: 30px;
+            width: 100%;
+            height: 100vh;
+        }
+         .container {
+            width: 100%;
+        }
+
+        .navbar {
+            background: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            transition: .3s;
+        }
+
+        .navbar a:hover {
+            color: blue;
+        }
+
+        .navbar i {
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .box{
+            width: 100%;
+            height: 800px;
+        }
+        .box img{
+            width: 100%;
+            height: 700px;
+            object-fit: cover;
+        }
+        .card{
+            width: 100%;
+            height: 500px;
+        }
+        .card img{
+            width: 100%;
+            height: 500px;
+        }
+        .row{
+            gap: 10px;
+            padding: 10px;
+            display: flex;
+        }
+        .slider {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+
+        .slider::-webkit-scrollbar {
+            display: none;
+        }
+        .close{
+            margin-top: 10px;
+        }
+        .close img{
+            object-fit: cover;
+            margin-top: 30px;
+            width: 800px;
+            height: 700px;
+        }
+        .info{
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+        .txt{
+            padding: 30px
+        }
+        .txt h1{
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .txt p{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="./Store.html">Store</a>
+            <a href="../Phone1/Mac.html">Mac</a>
+            <a href="#">iPad</a>
+            <a href="#">iPhone</a>
+            <a href="./applewatch.html">Watch</a>
+            <a href="#">Vision</a>
+            <a href="./Airport.html">AirPods</a>
+            <a href="#">TV & Home</a>
+            <a href="#">Entertainment</a>
+            <a href="#">Accessories</a>
+            <a href="#">Support</a>
+            <i class="bi bi-search"></i>
+        </div> 
+        <video class="scroll-item" width="100%" autoplay muted loop>
+            <source src="../Introducing AirPods Pro 3 _ Apple.mp4" type="video/mp4">
+        </video>
+        <div class="box">
+            <img src="https://www.apple.com/v/home/images/iphone-family/a/hero_iphone_family__be5jkzxszb1e_largetall.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="https://www.apple.com/v/home/images/college-students-2026/a/hero_college_students_2026__dzrtx52rt9aq_largetall_2x.jpg"
+                alt="">
+        </div>
+        <div class="row">
+            <div class="card">
+                <img src="https://www.apple.com/v/home/images/macbook-air-m5/a/promo_macbook_air_m5__e5xk2yysqiie_large_2x.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="https://www.apple.com/v/home/images/ipad-air-m4/a/promo_ipad_air_m4__bgcv7t286k8y_large_2x.jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <img src="https://www.apple.com/v/home/images/macbook-pro/a/promo_macbook_pro__c9td9w1mc8ia_large_2x.jpg"
+                    alt="">
+            </div>
+            <div class="card">
+                <img src="https://www.apple.com/v/home/images/apple-watch-series-11/a/promo_apple_watch_series_11__gnlwqxe1jlu2_large_2x.jpg"
+                    alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <img src="https://www.apple.com/v/home/images/iphone-tradein/a/promo_iphone_tradein__e4hrjxmgmf0i_large_2x.jpg"
+                    alt="">
+            </div>
+            <div class="card">
+                <img src="https://www.apple.com/v/home/images/apple-card/a/promo_apple_card__d8xz4kd4evwy_large_2x.jpg"
+                    alt="">
+            </div>
+        </div>
+        <h1 style="text-align: center; font-size: 50px; font-weight: 600; margin-top: 30px  ;">Endless entertainment.</h1>
+        <div class="slider-container">
+            <button class="btn prev">&#10094;</button>
+        
+            <div class="slider" id="slider">
+                <div class="close">
+                    <img
+                        src="https://is1-ssl.mzstatic.com/image/thumb/Features/v4/33/9e/cf/339ecfe7-f515-8594-2e48-d991803409ea/5a944fdc-acd7-47a8-89e7-274d84cf4276.png/2500x1336sr.jpg">
+                    <p>ProRes RAW</p>
+                </div>
+        
+                <div class="close">
+                    <img
+                        src="https://is1-ssl.mzstatic.com/image/thumb/Hm4A4O3VorNjFFadQnyhcA/2500x1336sr.jpg">
+                    <p>Pro workflows</p>
+                </div>
+        
+                <div class="close">
+                    <img
+                        src="https://is1-ssl.mzstatic.com/image/thumb/Features/v4/11/cd/47/11cd47ca-af61-71a8-6b02-4a0af9d55077/a54b4338-9340-422f-b5c6-1420bf850b01.png/2500x1336sr.jpg">
+                    <p>Genlock and timecode</p>
+                </div>
+        
+                <div class="close">
+                    <img
+                        src="https://is1-ssl.mzstatic.com/image/thumb/qkaEsaFl5id_Gx38S0IVLw/2500x1336sr.jpg">
+                    <p>Another Feature</p>
+                </div>
+                <div class="close">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Features/v4/78/57/f6/7857f6ec-a4ed-87dc-dea9-a6ed02888722/ebd59c17-8e95-49b1-aec0-44aec57388ee.png/2500x1336sr.jpg">
+                    <p>Another Feature</p>
+                </div>
+                <div class="close">
+                    <img
+                        src="https://is1-ssl.mzstatic.com/image/thumb/Features211/v4/78/97/14/7897142a-b8df-f071-fddb-c9bfcc5d8dbb/1081aa3d-8d1e-404a-87ca-7bb9642657c2.png/2500x1336sr.jpg">
+                    <p>Another Feature</p>
+                </div>
+                <div class="close">
+                    <img
+                        src="https://is1-ssl.mzstatic.com/image/thumb/pa_Dd2CLL-BlWQRqIurClw/2500x1336sr.jpg">
+                    <p>Another Feature</p>
+                </div>
+                <div class="close">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/X6v_Cbb571UaAbZnIJvClw/2500x1336sr.jpg">
+                    <p>Another Feature</p>
+                </div>
+                <div class="close">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Hj0w3h6_8b-NM4nnDwjfzQ/2500x1336sr.jpg">
+                    <p>Another Feature</p>
+                </div>
+            </div>
+        
+            <button class="btn next">&#10095;</button>
+        </div>
+        <div class="text">
+            <p style="margin-top: 30px; text-align: center; padding: 20px; color: gray;">Trade‑in values will vary based on the condition, year, and configuration of your eligible trade‑in device. Not all
+            devices are eligible for credit. You must be at least the age of majority to be eligible to trade in for credit or for
+            an Apple Gift Card. Trade‑in value may be applied toward qualifying new device purchase, or added to an Apple Gift Card.
+            Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was
+            made. Sales tax may be assessed on full value of a new device purchase. In‑store trade‑in requires presentation of a
+            valid photo ID (local law may require saving this information). Offer may not be available in all stores and may vary
+            between in‑store and online trade‑in. Some stores may have additional requirements. Apple or its trade‑in partners
+            reserve the right to refuse, cancel, or limit quantity of any trade‑in transaction for any reason. More details are
+            available from Apple’s trade-in partner for trade‑in and recycling of eligible devices. Restrictions and limitations may
+            apply.</p>
+            <p style="text-align: center; padding: 20px; color: gray;">To access and use all Apple Card features and products available only to Apple Card users, you must add Apple Card to
+            Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS. Apple Card is subject to credit
+            approval, available only for qualifying applicants in the United States, and issued by Goldman Sachs Bank USA, Salt Lake
+            City Branch.</p>
+            <p style="text-align: center; padding: 20px; color: gray;">Apple Payments Services LLC, a subsidiary of Apple Inc., is a service provider of Goldman Sachs Bank USA for Apple Card
+            and Savings accounts. Neither Apple Inc. nor Apple Payments Services LLC is a bank.</p>
+            All communications from Apple and Goldman Sachs Bank USA about Apple Card (including transactional and marketing communications) and customer service support are available in English. Certain communications about Apple Card can be viewed in another language depending on your device language settings. If you reside in the U.S. Virgin Islands, American Samoa, Guam, Northern Mariana Islands, or U.S. Minor Outlying Islands, please call Goldman Sachs at 877-255-5923 with questions about Apple Card.
+            <p style="text-align: center; padding: 20px; color: gray;">All communications from Apple and Goldman Sachs Bank USA about Apple Card (including transactional and marketing
+            communications) and customer service support are available in English. Certain communications about Apple Card can be
+            viewed in another language depending on your device language settings. If you reside in the U.S. Virgin Islands,
+            American Samoa, Guam, Northern Mariana Islands, or U.S. Minor Outlying Islands, please call Goldman Sachs at
+            877-255-5923 with questions about Apple Card.</p>
+            <p style=" text-align: center; padding: 20px; color: gray;">Learn more about how Apple Card applications are evaluated at support.apple.com/kb/HT209218.</p>
+            <p style="text-align: center; padding: 20px; color: gray;">A subscription is required for Apple Arcade, Apple Fitness+, Apple Music, and Apple TV.</p>
+            <p style="text-align: center; padding: 20px; color: gray;">Features are subject to change. Some features, applications, and services may not be available in all regions or all
+            languages.</p>
+        </div>
+        <div class="info">
+            <div class="txt">
+                <h1>Shop and Learn</h1>
+                <p>Store</p>
+                <p>Mac</p>
+                <p>iPad</p>
+                <p>iPhone</p>
+                <p>Watch</p>
+                <p>version</p>
+                <p>AirPods</p>
+                <p>TV & Home</p>
+                <p>AirTag</p>
+                <p>Accessories</p>
+                <p>Gift Cards</p>
+                <h1>Apple Wallet</h1>
+                <p>Wallet</p>
+                <p>Apple Card</p>
+                <p>Apple Pay</p>
+                <p>Apple Cash</p>
+            </div>
+            <div class="txt">
+                <h1>Account</h1>
+                <p>Manage Your Apple Account</p>
+                <p>Apple Store Account</p>
+                <p>iCloud.com</p>
+                <h1>Entertainment</h1>
+                <p>Apple one</p>
+                <p>Apple TV</p>
+                <p>Apple Music</p>
+                <p>Apple Arcade</p>
+                <p>Apple Fitness+</p>
+                <p>Apple New+</p>
+                <p>Apple Podcasts</p>
+                <p>Apple Books</p>
+                <p>Apple Store</p>
+            </div>
+            <div class="txt">
+                <h1>Apple Store</h1>
+                <p>Find a store</p>
+                <p>Genius Bar</p>
+                <p>today at Apple</p>
+                <h1>Group Reservations</h1>
+                <p>Apple Camp</p>
+                <p>Apple Store App</p>
+                <p>Certified Refurbished</p>
+                <p>Apple Trade In</p>
+                <p>Financing</p>
+                <p>Carrier Deals at Apple</p>
+                <p>Order Status</p>
+                <p>Shopping Help</p>
+            </div>
+            <div class="txt">
+                <h1>For Business</h1>
+                <p>Apple and Business</p>
+                <p>Shop for Business</p>
+                <h1>For Education</h1>
+                <p>Apple and Education</p>
+                <p>Shop for K-12</p>
+                <p>Shop for College</p>
+                <h1>For Healthcare</h1>
+                <p>Apple and Healthcare</p>
+                <h1>For Government</h1>
+                <p>Apple and Government</p>
+                <p>Shop for Veterans and Military</p>
+                <p>Shop for State and Local Employees</p>
+                <p>Shop for Federal Employees</p>
+            </div>
+            <div class="txt">
+                <h1>Apple Values</h1>
+                <p>Accessibility</p>
+                <p>Education</p>
+                <p>Environment</p>
+                <p>Inclusion and Diversity</p>
+                <p>Privacy</p>
+                <p>Racial Equity and Justice</p>
+                <p>Supply Chain Innovation</p>
+                <h1>About Apple</h1>
+                <p>Newsroom</p>
+                <p>Apple Leadership</p>
+                <p>Career Opportunities</p>
+                <p>Events</p>
+                <p>Contact Apple</p>
+            </div>
+        </div>
+        <h5 style="gap: 20px; padding: 40px;">More ways to shop: Find an Apple Store or other retailer near you. Or call 1-800-MY-APPLE (1-800-692-7753).</h5>
+        <h5 style="gap: 20px; padding: 40px;">Copyright © 2026 Apple Inc. All rights reserved.Privacy Policy Terms of Use Sales and Refunds Legal Site Map
+        United States</h5>
+</body>
+</html>

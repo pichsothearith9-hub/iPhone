@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .navbar {
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, .1);
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+            transition: .3s;
+        }
+
+        .navbar a:hover {
+            color: blue;
+        }
+
+        /* Box */
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+
+        /* Card */
+        .card {
+            text-align: center;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+        }
+
+        .card p {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .info {
+            width: 100%;
+            height: 50px;
+            background-color: gray;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .row {
+            width: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .row img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            transition: .3s;
+        }
+
+        .row img:hover {
+            transform: scale(1.05);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .col {
+            background: #f5f5f7;
+            border-radius: 40px;
+            padding: 50px;
+            min-height: 500px;
+            position: relative;
+            overflow: hidden;
+            transition: .3s;
+        }
+
+        .col:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+        }
+
+        .small-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #6e6e73;
+        }
+
+        .title {
+            margin-top: 20px;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.1;
+            color: #1d1d1f;
+        }
+
+        .desc {
+            margin-top: 25px;
+            font-size: 20px;
+            line-height: 1.5;
+            color: #1d1d1f;
+        }
+
+        .plus {
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+            width: 55px;
+            height: 55px;
+            background: #111;
+            border-radius: 50%;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .plus:hover {
+            background: #0071e3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="./Store.html">Store</a>
+            <a href="../Phone1/Mac.html">Mac</a>
+            <a href="#">iPad</a>
+            <a href="#">iPhone</a>
+            <a href="./applewatch.html">Watch</a>
+            <a href="#">Vision</a>
+            <a href="./Airport.html">AirPods</a>
+            <a href="#">TV & Home</a>
+            <a href="#">Entertainment</a>
+            <a href="#">Accessories</a>
+            <a href="#">Support</a>
+            <i class="bi bi-search"></i>
+        </div>
+        <div class="box">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/31/8a/2a/318a2a7a0a987d676012eb9f2af11c6c.jpg">
+                <p>Mac</p>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/10/2a/67/102a676f84a1ac426e8304cbd9a43c24.jpg">
+                <p>iPhone</p>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/ed/13/ff/ed13ffc782bf5e949c1fd003523280a7.jpg">
+                <p>iPad</p>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/09/28/bf/0928bf6f508e981c7e05fe78e10e18ed.jpg">
+                <p>Watch</p>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/d7/15/32/d71532db820408414a16ab5c82cf0642.jpg">
+                <p>AirPods</p>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/02/3c/8b/023c8bebf126854aa9eac3312ee3fd62.jpg">
+                <p>Vision Pro</p>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/236x/e8/2e/f7/e82ef73870f263bdd4b754bbff6601a3.jpg">
+                <p>Accessories</p>
+            </div>
+        </div>
+        <div class="info">
+            <h2 style="text-align: center; font-size: 20px;justify-content: center;">Now you can buy Apple Watch1 with
+                education savings.<span style="color: blue;">Shop</span></h2>
+        </div>
+        <h2 style="font-size: 50px; padding: 20px; margin-top: 20px;">Apple Watch</h2>
+        <div class="header">
+            <div class="row">
+                <img src="https://www.apple.com/assets-www/en_WW/watch/product_tile/large/s11_01ae61a6b_2x.png" alt="">
+            </div>
+            <div class="row">
+                <img src="https://www.apple.com/assets-www/en_WW/watch/product_tile/large/se_32690d524_2x.png" alt="">
+            </div>
+            <div class="row">
+                <img src="https://www.apple.com/assets-www/en_WW/watch/product_tile/large/u3_cd8a65060_2x.png" alt="">
+            </div>
+            <div class="row">
+                <img src="https://i.pinimg.com/1200x/a5/2f/3a/a52f3a2298843791e75701616b29009c.jpg" alt="">
+            </div>
+            <div class="row">
+                <img style="border-radius: 20px;"
+                    src="https://i.pinimg.com/1200x/e8/43/cf/e843cf98972f93f3bdb232175878fb92.jpg" alt="">
+            </div>
+        </div>
+        <h1 style="margin-top: 20px; padding: 20px; text-align: center;">Why Apple is the best
+            place to buy Apple Watch.</h1>
+    </div>
+    <div class="grid">
+        <div class="col">
+            <div class="small-title">Financing</div>
+            <div class="title">
+                Pay over time,<br>
+                interest-free.
+            </div>
+            <div class="desc">
+                When you choose to check out at Apple<br>
+                with Apple Card Monthly Installments.<sup>◊</sup>
+            </div>
+            <div class="apple-card">
+                <div class="chip"></div>
+                <div class="apple-logo"></div>
+                <div class="name">Marisa Robertson</div>
+            </div>
+            <div class="plus">+</div>
+        </div>
+        <div class="col">
+            <div class="small-title">Apple Trade In</div>
+            <div class="title">Trade in your eligible device for credit.<br>
+            </div>
+            <div class="desc">
+                <br>Just add a trade-in when you choose a new product. Once your eligible device has been received and
+                verified, we’ll
+                credit the value to your payment method. Or choose to check out at Apple with Apple Card Monthly
+                Installments and we’ll
+                apply the credit instantly. Terms apply.<sup>◊</sup>
+            </div>
+            <div class="apple-card">
+                <div class="chip"></div>
+                <div class="apple-logo">Education</div>
+                <div class="name">Save on Apple Watch.Footnote 11</div>
+            </div>
+            <div class="plus">College students and educators can save on Apple Watch Series 11, Apple Watch SE 3, and
+                Apple Watch Ultra 3 with
+                education pricing.Footnote * symbol*</div>
+        </div>
+        <div class="col">
+            <div class="small-title">Delivery and Pickup</div>
+            <div class="title">Flexible delivery and pickup options.<br>
+            </div>
+            <div class="desc">
+                Get your new Apple products quickly and easily with two‑hour delivery from an Apple Store, free next‑day
+                deliveryr<br><sup></sup>
+            </div>
+            <div class="apple-card">
+                <div class="chip"></div>
+                <div class="apple-logo"></div>
+                <div class="name">Marisa Robertson</div>
+            </div>
+            <div class="plus">+</div>
+        </div>
+        <div class="col">
+            <div class="small-title">Guided Video Shopping</div>
+            <div class="title">Shop live with a Specialist.<br>
+            </div>
+            <div class="desc">
+                We can help you choose the product you need while guiding you through the online Apple Store. You won’t
+                appear on
+                camera.Available <br><sup></sup>
+            </div>
+            <div class="apple-card">
+                <div class="chip"></div>
+                <div class="apple-logo"></div>
+                <div class="name">Marisa Robertson</div>
+            </div>
+            <div class="plus">+</div>
+        </div>
+    </div>
+</body>
+
+</html>

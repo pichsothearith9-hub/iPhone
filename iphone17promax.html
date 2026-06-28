@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(0, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .navbar {
+            background: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            transition: .3s;
+        }
+
+        .navbar a:hover {
+            color: blue;
+        }
+
+        .navbar i {
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .box {
+            width: 100%;
+            height: 50px;
+            background-color: rgba(167, 154, 154, 0);
+        }
+
+        .info {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 20px;
+            background-color: black;
+        }
+
+        .header {
+            margin-top: 20px;
+            background-color: black;
+        }
+
+        .content {
+            width: 900px;
+            height: 900px;
+            background-color: gray;
+            border-radius: 20px;
+        }
+
+        .item {
+            background-color: black;
+        }
+
+        .middle {
+            width: 100%;
+            margin-top: 50px;
+            background-color: black;
+        }
+
+        .middle img {
+            width: 100%;
+        }
+
+        .wrapper {
+            padding: 50px;
+            margin-top: 30px;
+            background-color: black;
+            display: flex;
+            gap: 20px;
+        }
+
+        .wrapper h1 {
+            margin-top: 30px;
+            padding: 20px;
+            color: white;
+        }
+
+        .wrapper p {
+            margin-top: 30px;
+            padding: 10px;
+            color: white;
+        }
+
+        .grid {
+            background-color: black;
+        }
+
+        .page {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .slider-container {
+            position: relative;
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .slider {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+
+        .slider::-webkit-scrollbar {
+            display: none;
+        }
+
+        .card {
+            min-width: 400px;
+            color: white;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+        .close{
+            margin-top: 20px;
+        }
+        .close img{
+            margin-top: 30px;
+            border-radius: 20px;
+            width: 740px;
+            height: 700px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="./Store.html">Store</a>
+            <a href="../Phone1/Mac.html">Mac</a>
+            <a href="#">iPad</a>
+            <a href="#">iPhone</a>
+            <a href="./applewatch.html">Watch</a>
+            <a href="#">Vision</a>
+            <a href="./Airport.html">AirPods</a>
+            <a href="#">TV & Home</a>
+            <a href="#">Entertainment</a>
+            <a href="#">Accessories</a>
+            <a href="#">Support</a>
+            <i class="bi bi-search"></i>
+        </div>
+        <div class="box">
+            <p style="text-align: center; justify-content: center; ">Get up to $195–$695 in credit toward iPhone 17 Pro
+                when you trade in iPhone 13 or higher.1</p>
+        </div>
+        <img style="width: 100%;"
+            src="https://www.apple.com/v/iphone-17-pro/g/images/overview/welcome/hero_endframe__gb7f6nb06rau_xlarge_2x.jpg"
+            alt="">
+        <h1 style="margin-top: 20px; color: white; padding: 20px;">Get the highlights.</h1>
+        <div class="info">
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/e1/09/4b/e1094b0ee301debc27262b98c6af0b4d.jpg" alt="">
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/1c/d7/37/1cd737c0b57a3c706a7e2b9c7a00f437.jpg" alt="">
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/5f/fb/6b/5ffb6b760fd6cfd26f4c77e316043ccd.jpg" alt="">
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/76/9d/4e/769d4ebb87febecbe6291e11a617fd9a.jpg" alt="">
+            </div>
+        </div>
+        <div class="header">
+            <h1
+                style="font-size: 20px; font-weight: 600; color: orange; text-align: center; margin-top: 50px; margin-top: 20px;">
+                Design</h1>
+            <h2 style="font-size: 30px; text-align: center; color: white; margin-top: 20px;">Unibody enclosure.
+                Makes a strong case for itself.</h2>
+            <p style="font-weight: 600; text-align: center; font-size: 20px; color: gray; margin-top: 20px;">Introducing
+                iPhone 17 Pro and iPhone 17 Pro Max, designed from the inside out to be the most powerful iPhone models
+                ever
+                made.<br style="margin-top: 20px;"> At the core of the new design is a heat-forged aluminum unibody
+                enclosure that maximizes performance, battery
+                capacity, and durability.</p>
+            <img style="margin-top: 20px; width: 100%; height: 900px;" src="https://www.apple.com/v/iphone-17-pro/g/images/overview/design/design_endframe__7k7qs1qlnpu6_large_2x.jpg" alt="">
+            <h1 style="padding: 60px; font-weight: 700; color: white; font-size: 50px;">Take a closer look.</h1>
+            <div class="content">
+                <img style="height: 900px;" src="https://www.apple.com/v/iphone-17-pro/g/images/overview/cameras/intro/camera_hero_endframe__bj7hg5poypn6_xlarge_2x.jpg" alt="">
+            </div>
+        </div>
+        <div class="item">
+            <p style="color: orange;text-align: center;">camera</p>
+            <h1 style="color: white; text-align: center;">A big zoom forward.</h1>
+            <img style="width: 100%;" src="../Screenshot 2026-06-22 204106.png" alt="">
+            <p style="margin-top: 40px; color: white; text-align: center;">Across the iPhone 17 Pro camera system,
+                you’ll find innovation that goes to great lengths.<br> The telephoto features the
+                next generation of our tetraprism design and a 56 percent<br> larger sensor. With an equivalent 200 mm
+                focal length, the 8x
+                optical-quality zoom makes<br> this the longest iPhone Telephoto ever — offering 16x total optical zoom
+                range. So you,<br> can
+                explore an even wider range of creative choices and add a longer reach to<br> your compositions.</p>
+            <h1 style="color: white; font-size: 20px; margin-top: 80px; text-align: center;">Like having 8 pro lenses in
+                your pocket. Super-high-resolution 24MP photos by default.
+            </h1>
+            <div class="middle">
+                <img style="width: 1005; padding: 20px;" src="../Screenshot 2026-06-22 205110.png" alt="">
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="row">
+                <h1>48MP Fusion Main camera</h1>
+                <p>24/48 mm focal length (1x/2x)</p>
+                <p>ƒ/1.78 aperture</p>
+                <p>2.44 μm quad-pixel (1.22 μm individual)</p>
+            </div>
+            <div class="row">
+                <h1>48MP Fusion Ultra Wide camera</h1>
+                <p>13 mm focal length (.5x/macro)</p>
+                <p>ƒ/2.2 aperture</p>
+                <p>1.4 μm quad-pixel (0.7 μm individual)</p>
+            </div>
+            <div class="row">
+                <h1>48MP Fusion Telephoto camera</h1>
+                <p>100/200 mm focal length (4x/8x)</p>
+                <p>ƒ/2.8 aperture</p>
+                <p>1.4 μm quad-pixel (0.7 μm individual))</p>
+            </div>
+        </div>
+        <div class="slider-container">
+            <button class="btn prev">&#10094;</button>
+            <div class="slider" id="slider">
+                <div class="close">
+                    <img
+                        src="https://www.apple.com/v/iphone-17-pro/g/images/overview/cameras/photo/night_mode__ck9xa9ku3fxy_large_2x.jpg">
+                    <p>ProRes RAW</p>
+                </div>
+        
+                <div class="close">
+                    <img
+                        src="https://www.apple.com/v/iphone-17-pro/g/images/overview/cameras/photo/48mp__tuwanegt2r6u_large_2x.jpg">
+                    <p>Pro workflows</p>
+                </div>
+        
+                <div class="close">
+                    <img
+                        src="https://www.apple.com/v/iphone-17-pro/g/images/overview/cameras/photo/uw48mp__fxddw4t4p5qq_large_2x.jpg">
+                    <p>Genlock and timecode</p>
+                </div>
+        
+                <div class="close">
+                    <img
+                        src="https://www.apple.com/v/iphone-17-pro/g/images/overview/cameras/photo/photographic_styles__ejdtzof0t8sy_large_2x.jpg">
+                    <p>Another Feature</p>
+                </div>
+                <div class="close">
+                    <img
+                        src="https://www.apple.com/v/iphone-17-pro/g/images/overview/cameras/photo/clean_up__djkablowcniq_large_2x.jpg">
+                    <p>Another Feature</p>
+                </div>
+            </div>
+        
+            <button class="btn next">&#10095;</button>
+        </div>  
+        <div class="grid">
+            <h1 style="font-size: 50px; color: white; background-color: black; text-align: center; margin-top: 40px;">
+                18MP Center Stage front camera<br>
+                It’s a total frame changer.</h1>
+            <p style="color: gray; font-size: 20px; text-align: center; margin-top: 20px;">The new front camera gives
+                you flexible ways to frame your photos and videos — and so<br> much more. Tap to expand the field
+                of view and rotate from portrait to landscape without<br> moving your iPhone. And when friends join the
+                shot, the field of
+                view expands so you get<br> more friendsies in your selfies.</p>
+            <div class="page">
+                <div class="main">
+                    <img src="../photo_2026-06-22_21-11-13.jpg" alt="">
+                </div>
+                <div class="main">
+                    <h3 style="color: white; font-size: 30px; margin-top: 40px;">The iPhone 17 Pro Max camera is
+                        expected to continue Apple’s focus on advanced computational photography and
+                        professional-level video recording. It will likely improve low-light performance, making night
+                        photos clearer and more
+                        detailed, while also enhancing zoom quality through a better telephoto lens system. Apple may
+                        also refine its image
+                        processing to produce more natural colors and sharper textures in both photos and videos. In
+                        addition, features like
+                        cinematic video mode, action stabilization, and high-resolution recording are expected to become
+                        even more powerful,
+                        making the camera system suitable not only for everyday users but also for content creators and
+                        mobile photographers.
+                    </h3>
+                </div>
+            </div>
+            <img src="../Screenshot 2026-06-22 224425.png" alt="">
+            <h2 style="color: white ; text-align: center; margin-top: 20px;">From home movies to Hollywood productions,
+                iPhone 17 Pro is up to any challenge. <br style="margin-top: 10px;">With more pro video features than
+                ever
+                — like enhanced video stabilization, cinema-grade<br style="margin-top: 10px;"> specs, and compatibility
+                with industry-standard workflows — iPhone 17
+                Pro puts<br> powerful filmmaking tools within reach, wherever you need them.</h2>
+        </div>
+        <div class="slider-container">
+            <button class="btn prev">&#10094;</button>
+
+            <div class="slider" id="slider">
+                <div class="close">
+                    <img src="https://www.apple.com/v/iphone-17-pro/g/images/overview/cameras/pro-video/prores__mg5ug8qfvmqi_large_2x.jpg">
+                    <p>ProRes RAW</p>
+                </div>
+
+                <div class="close">
+                    <img src="https://www.apple.com/v/iphone-17-pro/g/images/overview/cameras/pro-video/workflow__bkn9cfedtjua_large_2x.jpg">
+                    <p>Pro workflows</p>
+                </div>
+
+                <div class="close">
+                    <img src="https://www.apple.com/v/iphone-17-pro/g/images/overview/cameras/pro-video/genlock__1zaxui1zpb6m_large_2x.jpg">
+                    <p>Genlock and timecode</p>
+                </div>
+
+                <div class="close">
+                    <img src="https://www.apple.com/v/iphone-17-pro/g/images/overview/cameras/photo/spatial_capture__bdvwxbm8sefm_large_2x.jpg">
+                    <p>Another Feature</p>
+                </div>
+            </div>
+
+            <button class="btn next">&#10095;</button>
+        </div>
+</body>
+</html>
+<script>
+    const slider = document.getElementById("slider");
+
+    document.querySelector(".next").onclick = () => {
+        slider.scrollLeft += 420;
+    };
+
+    document.querySelector(".prev").onclick = () => {
+        slider.scrollLeft -= 420;
+    };
+</script>
